@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="plugin.google.maps" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CordovaGoogleMaps</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="ios" spec="^4.4.0" />
+    <plugin name="com.googlemaps.ios" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk" />
+    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps">
+        <variable name="API_KEY_FOR_ANDROID" value="(your api key)" />
+        <variable name="API_KEY_FOR_IOS" value="(your api key)" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
+    </plugin>
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
+</widget>
