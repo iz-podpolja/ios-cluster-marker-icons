@@ -4,3 +4,4 @@ build/
 platforms/
 config.xml
 plugins/
+typings
